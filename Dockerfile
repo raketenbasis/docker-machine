@@ -8,6 +8,9 @@ RUN docker-compose --version
 RUN curl -L https://github.com/docker/machine/releases/download/v0.8.2/docker-machine-`uname -s`-`uname -m` > /usr/bin/docker-machine && chmod +x /usr/bin/docker-machine
 RUN docker-machine --version
 
+RUN pip install docker-compose
+RUN aws --version
+
 COPY entrypoint.sh /
 
 ENTRYPOINT ["/entrypoint.sh"]
