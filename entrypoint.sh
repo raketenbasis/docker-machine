@@ -1,4 +1,4 @@
-#!/bin/ash
+#!/bin/bash
 
 MACHINE_DIR=~/.docker/machine/machines/${DOCKER_MACHINE_NAME}
 

@@ -1,6 +1,6 @@
 FROM alpine:edge
 
-RUN apk -q update && apk add docker curl openssh-client py2-pip
+RUN apk -q update && apk add bash docker curl openssh-client py2-pip
 
 RUN pip install docker-compose
 RUN docker-compose --version
