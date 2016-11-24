@@ -9,7 +9,6 @@ RUN curl -L https://github.com/docker/machine/releases/download/v0.8.2/docker-ma
 RUN docker-machine --version
 
 RUN pip install docker-compose
-RUN aws --version
 
 COPY entrypoint.sh /
 
