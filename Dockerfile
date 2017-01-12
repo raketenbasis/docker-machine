@@ -1,5 +1,8 @@
 FROM alpine:edge
 
+ENV DOCKER_MACHINE_NAME=default
+ENV DOCKER_MACHINE_PORT=2376
+
 RUN apk -q update && apk add bash docker curl openssh-client py2-pip
 
 RUN pip install docker-compose
